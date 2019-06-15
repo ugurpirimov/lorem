@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>webpack starter</title>
+  </head>
+  <body>
+    <section id="movies">
+      <div class="container">
+        <div class="row">
+          <div class="filter col-md-3 pt-3">
+            <div class="filter-body">
+              <div class="search-box">
+                <input
+                  type="text"
+                  class="form-control filter-input"
+                  placeholder="type to search"
+                />
+              </div>
+              <div class="filter-group mt-5">
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="durationFilter"
+                  />
+                  <label class="custom-control-label" for="durationFilter"
+                    >Least 45 minute</label
+                  >
+                </div>
+                <div class="custom-control custom-checkbox">
+                  <input
+                    type="checkbox"
+                    class="custom-control-input"
+                    id="episodeCountFilter"
+                  />
+                  <label class="custom-control-label" for="episodeCountFilter"
+                    >More than 20 episode</label
+                  >
+                </div>
+                <div class="filter-country mt-3">
+                  <select id="countryFilter">
+                    <option value>Choose...</option>
+                    <option value="UA">Ukraine</option>
+                    <option value="USA">United State</option>
+                    <option value="UK">United Kingdom</option>
+                    <option value="RU">Russia</option>
+                  </select>
+                </div>
+                <div class="filter-producer mt-3">
+                  <select id="producerFilter">
+                    <option value>Choose...</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-9 movies">
+            <div class="row justify-content-end"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
